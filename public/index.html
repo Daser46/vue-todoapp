@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body {
+        height: 120vh;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+	      background-attachment: fixed;
+      }
+      .footermain{
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(45, 166, 187);
+	height:200px;
+	width: 100%;
+	color: whitesmoke;
+	position: fixed;
+	bottom:0px;
+	padding: 10px 10px 10px 5px;
+}
+.footermain .navigation{
+	color:whitesmoke;	
+	margin: 10px 5px 5px 0px;
+}
+.footermain hr{
+	margin:10px;
+}
+.copyright{
+	margin: 10px;
+	font-family: sans-serif;
+	font-size: small;
+}
+.footermain a{
+	text-decoration: none;
+}
+.footermain a:hover{
+	text-decoration: underline;
+	color: lightgreen;
+	transition: 1.5s;
+}
+.footermain .navigation:hover{
+	color: lightgreen;
+	transition: 1s;
+}
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <div>
+  <div class="footermain">
+    <div>
+            <img src="tg logo.png" height="70px" width="70px" alt="tglogo">
+            <h6>Tourist Guide Sri Lanka</h6>
+    </div>
+    <div>	
+    <center><hr color="white" width="80%" size="thin"/></center>
+    <p class="copyright">© 2021 All Rights Reserved by TGSL</p>
+    <p>
+    <a href="home.html"><span class="navigation">Home</span></a>
+    <a href="about.html"><span class="navigation">About</span></a>
+    <a href="index.html"><span class="navigation">To-do</span></a>
+    <a href="Joinus.html"><span class="navigation">Join Us</span></a>
+    <a href="contact.html"><span class="navigation">Contact Us</span></a>
+    </p>
+    </div>
+  </div>
+</div>
+</html>
